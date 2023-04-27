@@ -13,6 +13,11 @@ inputCheck.style.accentColor = "brown";
 inputName.addEventListener("focus", (event) => {
   event.target.style.background = "grey";
   event.target.style.color = "blanchedalmond";
+//   if (inputName.value && inputSurname.value && inputCheck.checked) {
+//     submitBtn.removeAttribute("disabled");
+//   } else {
+//     submitBtn.disabled = "true";
+//   }
 });
 
 inputName.addEventListener("mouseout", (event) => {
@@ -43,23 +48,11 @@ inputCheck.addEventListener("click", function () {
     labelCheckbox.style.visibility = "hidden";
   }
 });
-inputRadio.forEach((element) => {
-  element.addEventListener("click", function () {
-    element.style.accentColor = "midnightblue";
-    alert("Thanks");
-  });
-});
 
-// if(this.checked){
-//     sendbtn.disabled = false;
-// } else {
-//     sendbtn.disabled = true;
-// }
-// inputName.value && inputSurname.value
-// inputCheck.addEventListener("checked", function () {
-//   if (inputName.value && inputSurname.value) {
-//     submitBtn.removeAttribute("disabled");
-//   } else {
-//     submitBtn.disabled = "true";
-//   }
-// });
+inputRadio.forEach((element) => {
+    element.addEventListener("click", function () {
+        element.style.accentColor = "midnightblue";
+        alert("Thanks");
+    });
+});
+inputRadio.required = required;
