@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.table{
+    display: flex;
+    flex-direction: column ;
+    input{
+        width: 900px;
+        margin: 10px auto;
+        padding: 8px;
+        outline: none;
+        border: 1px solid #000;
+    }
+    table{
+    width: 100%;
+    max-width: 900px;
+    margin: 2px auto;
+    border-collapse: collapse;
+    th{
+        cursor: pointer;
+        .arrow-up-id, .arrow-up-name, .arrow-down-name{
+            display: none;
+        }
+    }
+    th,td{
+        border: 1px solid #000;
+        padding: 8px;
+        text-align: center;
+    }
+}
+}
