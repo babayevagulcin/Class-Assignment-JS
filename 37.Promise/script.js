@@ -7,7 +7,6 @@ function deleteInfo(id) {
   });
   getAllInfo();
 }
-deleteInfo();
 
 function getAllInfo() {
   fetch(`${BASE_URL}`)
@@ -27,6 +26,10 @@ function getAllInfo() {
     <td><button>Delete</button></td>
     `;
           tBody.append(tr);
+        });
+        let button = document.querySelector("button");
+        button.addEventListener("click", function () {
+          deleteInfo(item.id);
         });
       }
       tableBody(data);

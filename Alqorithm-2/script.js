@@ -10,11 +10,10 @@ console.log(capitalizeFirst("This is a title"));
 console.log(capitalizeFirst("capitalize every word"));
 
 // 2
-function encode(str) {
-  return str.split``.map((item) =>
-    item.length > 4 ? item.split``.map((elem) => elem = "*").join`` : elem).join``
+function encoded(str) {
+  return str.split` `.map((item) =>item.length > 4 ? item.split``.map((elem) => elem = "*").join``:item).join` `
   ;
 }
-console.log(encode("The code is fourty"));
-console.log(encode("Two plus three is five"));
-console.log(encode("aaaa aaaaa 1234 123456"));
+console.log(encoded("The code is fourty"));
+console.log(encoded("Two plus three is five"));
+console.log(encoded("aaaa aaaaa 1234 123456"));
