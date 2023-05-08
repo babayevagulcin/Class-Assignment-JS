@@ -6,27 +6,26 @@ async function getAllInfo() {
   try {
     const response = await fetch(API_URL);
     const data = await response.json();
-    cards.innerHTML=" "
+    cards.innerHTML = " ";
     data.forEach((item) => {
       const card = document.createElement("div");
       const div = document.createElement("div");
       const iconEdit = document.createElement("i");
       const iconRemove = document.createElement("i");
 
+      // div.classList.add("m-2");
+      card.classList.add("card", "col-5");
+      iconEdit.classList.add("fa-solid", "fa-pen");
+      iconRemove.classList.add("fa-solid", "fa-trash-can");
 
-      div.classList.add("m-2"); 
-      card.classList.add("card", "col-5"); 
-      iconEdit.classList.add("fa-solid", "fa-pen"); 
-      iconRemove.classList.add("fa-solid", "fa-trash-can"); 
-      
       card.innerHTML = `
     <div>
         <h4>${item.shipAddress?.city}</h4>
-        <p>${item.shipAddress?.country}</p>
+        <span>${item.shipAddress?.country}</span>
     </div>
     `;
-      cards.append(div)
-      div.append(iconEdit,iconRemove);
+      card.append(div);
+      div.append(iconEdit, iconRemove);
       cards.append(card);
     });
   } catch (error) {
