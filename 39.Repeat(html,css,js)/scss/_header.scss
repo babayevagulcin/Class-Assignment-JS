@@ -1,0 +1,39 @@
+header {
+  .header {
+    nav {
+      background-color: rgb(209, 206, 202);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      h2 {
+        cursor: pointer;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto 0;
+        li {
+          a {
+            padding: 5px 10px;
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+            border: 1px solid transparent;
+            &:hover {
+              border-color: black;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.background {
+  height: 100vh;
+  background-image: url(/img/background.jpeg);
+  background-size: cover;
+}
