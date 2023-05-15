@@ -1,0 +1,55 @@
+#lists {
+  margin-top: 50px;
+  .lists {
+    h3 {
+      text-align: center;
+      margin-bottom: 30px;
+      &::after {
+        content: "";
+        border: 1px solid rgb(78, 1, 1);
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 120px;
+      }
+    }
+    .img-border {
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+    }
+  }
+  .cards {
+    display: none;
+    .card {
+      margin: 10px 0;
+      padding: 15px;
+      position: relative;
+      .card-button {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+      }
+    }
+    @media only screen and (max-width: 577px){
+      .card {
+        position: static;
+        .card-button {
+          position: static;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .lists {
+      .table {
+        display: none;
+      }
+      .cards {
+        display: block;
+      }
+    }
+  }
+  
+}
