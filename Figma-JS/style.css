@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(238, 238, 238);
+}
+body header {
+  background-color: #fff;
+}
+body header .nav {
+  justify-content: space-between;
+}
+body #search-filter {
+  margin: 50px 0;
+}
+body #search-filter .search-filter {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+body #search-filter .search-filter .fa-magnifying-glass {
+  position: absolute;
+  top: 35%;
+  left: 15px;
+}
+body #search-filter .search-filter #search {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 50px;
+  width: 50%;
+}
+body #search-filter .search-filter #country {
+  padding: 5px;
+  outline: none;
+  border: none;
+}
+body #cards a {
+  text-decoration: none;
+  color: #000;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(238, 238, 238);
+
+  header {
+    background-color: #fff;
+    .nav {
+      justify-content: space-between;
+    }
+  }
+  #search-filter {
+    margin: 50px 0;
+    .search-filter {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      .fa-magnifying-glass{
+        position: absolute;
+        top: 35%;
+        left: 15px;
+      }
+       #search {
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        padding-left: 50px;
+        width: 50%;
+        
+      }
+      #country {
+        padding: 5px;
+        outline: none;
+        border: none;
+      }
+    }
+  }
+  #cards {
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+}
