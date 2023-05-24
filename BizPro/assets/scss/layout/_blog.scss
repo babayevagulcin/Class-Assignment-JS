@@ -1,0 +1,44 @@
+#blog {
+  padding-top: 100px;
+  .blog {
+    .blog-content {
+      h2 {
+        text-align: center;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 32px;
+        letter-spacing: 2px;
+        &::after {
+          content: "";
+          border: 2px solid #c2565f;
+          display: block;
+          width: 40px;
+          margin: 10px auto;
+          opacity: 0.7;
+        }
+      }
+      p {
+        width: 80%;
+        opacity: 0.7;
+        text-align: center;
+        margin: 40px auto;
+        line-height: 20px;
+      }
+    }
+    .blog-boxes{
+        .blog-box{
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            h5{
+                font-weight: 500;
+            }
+            p{
+                font-size: 15px;
+                line-height: 20px;
+                opacity: 0.7;
+            }
+        }
+    }
+  }
+}

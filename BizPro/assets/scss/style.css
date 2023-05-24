@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none !important;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-family: "Raleway", sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+header .navbar nav .icon {
+  display: none;
+}
+header .navbar nav .icon span {
+  color: #fff;
+}
+header .navbar nav ul {
+  display: flex;
+  gap: 25px;
+}
+header .navbar nav ul li .home {
+  color: #c2565f;
+}
+header .navbar nav ul li a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 991px) {
+  header .navbar {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header .navbar {
+    flex-direction: row;
+  }
+  header .navbar nav .icon {
+    display: block;
+  }
+  header .navbar nav .icon .fa-bars {
+    color: #fff;
+    margin-left: 5px;
+  }
+  header .navbar nav ul {
+    display: none;
+  }
+}
+
+#about {
+  padding-top: 70px;
+}
+#about .about .about-content h2 {
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+#about .about .about-content h2::after {
+  content: "";
+  border: 2px solid #c2565f;
+  display: block;
+  width: 40px;
+  margin: 10px auto;
+  opacity: 0.7;
+}
+#about .about .about-content p {
+  width: 80%;
+  opacity: 0.7;
+  text-align: center;
+  margin: 40px auto;
+  line-height: 20px;
+}
+#about .about .boxes .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+#about .about .boxes .box .img-border {
+  border: 2px solid #c2565f;
+  border-radius: 50%;
+  padding: 30px;
+}
+#about .about .boxes .box .img-border:hover {
+  background-color: #c2565f;
+  cursor: pointer;
+}
+#about .about .boxes .box h4 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#about .about .boxes .box p {
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.7;
+  line-height: 25px;
+  word-spacing: 2px;
+}
+#about .about .boxes .box a {
+  border-radius: 0;
+}
+#about .about .boxes .box span a {
+  color: #000;
+  margin: 0 20px;
+}
+@media only screen and (max-width: 991px) {
+  #about .boxes .box {
+    margin-top: 20px;
+  }
+}
+
+#team .team {
+  margin-top: 100px;
+}
+#team .team .team-content h2 {
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+#team .team .team-content h2::after {
+  content: "";
+  border: 2px solid #c2565f;
+  display: block;
+  width: 40px;
+  margin: 10px auto;
+  opacity: 0.7;
+}
+#team .team .team-content p {
+  width: 80%;
+  opacity: 0.7;
+  text-align: center;
+  margin: 40px auto;
+  line-height: 20px;
+}
+#team .team .team-boxes {
+  margin-top: 30px;
+}
+#team .team .team-boxes .team-box h5 {
+  text-align: center;
+  padding: 10px 0;
+  font-weight: 600;
+  opacity: 0.7;
+}
+#team .team .team-boxes .team-box p {
+  text-align: center;
+}
+@media only screen and (max-width: 991px) {
+  #team .team .team-boxes .team-box img {
+    width: 350px;
+  }
+}
+
+#blog {
+  padding-top: 100px;
+}
+#blog .blog .blog-content h2 {
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+#blog .blog .blog-content h2::after {
+  content: "";
+  border: 2px solid #c2565f;
+  display: block;
+  width: 40px;
+  margin: 10px auto;
+  opacity: 0.7;
+}
+#blog .blog .blog-content p {
+  width: 80%;
+  opacity: 0.7;
+  text-align: center;
+  margin: 40px auto;
+  line-height: 20px;
+}
+#blog .blog .blog-boxes .blog-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+#blog .blog .blog-boxes .blog-box h5 {
+  font-weight: 500;
+}
+#blog .blog .blog-boxes .blog-box p {
+  font-size: 15px;
+  line-height: 20px;
+  opacity: 0.7;
+}
+
+#footer {
+  margin-top: 70px;
+  background-color: #1e1e1e;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+#footer .footer p {
+  text-align: center;
+  opacity: 0.7;
+  color: white;
+  font-weight: 200;
+}
+#footer .footer p span {
+  color: #3177b2;
+}
+
+#form {
+  margin-top: 150px;
+  margin-bottom: 90px;
+  background-color: #bc5148;
+  padding: 100px 0;
+}
+#form .submit-btn {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  color: #fff;
+}
+
+section {
+  padding-top: 70px;
+}
+section .fav-boxes .fav-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+section .fav-boxes .fav-box .img-border {
+  border: 2px solid #c2565f;
+  border-radius: 50%;
+  padding: 30px;
+}
+section .fav-boxes .fav-box .img-border:hover {
+  background-color: #c2565f;
+  cursor: pointer;
+}
+section .fav-boxes .fav-box h4 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+section .fav-boxes .fav-box p {
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.7;
+  line-height: 25px;
+  word-spacing: 2px;
+}
+section .fav-boxes .fav-box a {
+  border-radius: 0;
+}/*# sourceMappingURL=style.css.map */

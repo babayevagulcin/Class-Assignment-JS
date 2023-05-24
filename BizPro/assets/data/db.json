@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "id": "2",
+      "caption": "WEB DEVELOPMENT",
+      "description": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+      "photo": "./assets/img/editing.png"
+    },
+    {
+      "id": "1",
+      "caption": "PHOTOGRAPHY",
+      "description": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+      "photo": "./assets/img/photo-camera-interface-symbol-for-button.png"
+    },
+    {
+      "id": "3",
+      "caption": "Online Marketing",
+      "description": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+      "photo": "./assets/img/diagram.png"
+    }
+  ],
+  "fav": []
+}

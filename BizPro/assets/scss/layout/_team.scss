@@ -1,0 +1,54 @@
+#team {
+  .team {
+    margin-top: 100px;
+    .team-content {
+      h2 {
+        text-align: center;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 32px;
+        letter-spacing: 2px;
+        &::after {
+          content: "";
+          border: 2px solid #c2565f;
+          display: block;
+          width: 40px;
+          margin: 10px auto;
+          opacity: 0.7;
+        }
+      }
+      p {
+        width: 80%;
+        opacity: 0.7;
+        text-align: center;
+        margin: 40px auto;
+        line-height: 20px;
+      }
+    }
+    .team-boxes {
+      margin-top: 30px;
+      .team-box {
+        h5 {
+          text-align: center;
+          padding: 10px 0;
+          font-weight: 600;
+          opacity: 0.7;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .team {
+      .team-boxes {
+        .team-box {
+          img {
+            width: 350px;
+          }
+        }
+      }
+    }
+  }
+}
