@@ -1,0 +1,46 @@
+#blog {
+  padding-top: 100px;
+  .blog {
+    .blog-content {
+      padding-bottom: 70px;
+      h1 {
+        text-align: center;
+        padding: 15px 0;
+      }
+      p {
+        text-align: center;
+        opacity: 0.7;
+      }
+    }
+    .blog-cards {
+      .blog-card {
+        .travel,
+        .style {
+          background-image: linear-gradient(
+            rgb(129, 141, 248),
+            rgb(211, 159, 248)
+          );
+          color: #fff;
+          border-radius: 0;
+          margin-top: 10px;
+          &:hover {
+            background-image: linear-gradient(
+              rgb(255, 255, 255),
+              rgb(255, 255, 255)
+            );
+            color: #000;
+          }
+        }
+        h5 {
+          padding-top: 10px;
+        }
+        p {
+          padding: 10px 0;
+          font-size: 14px;
+          line-height: 25px;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}

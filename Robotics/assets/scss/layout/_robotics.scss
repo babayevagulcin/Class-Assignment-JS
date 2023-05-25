@@ -1,0 +1,67 @@
+#robotics {
+  background-image: url(/assets/img/banner-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  .robotics {
+    display: flex;
+    justify-content: space-between;
+    .robotics-left {
+      display: flex;
+      flex-direction: column;
+      row-gap: 25px;
+      color: #fff;
+      h1 {
+        font-weight: 300;
+        font-size: 60px;
+        line-height: 65px;
+      }
+      p {
+        font-weight: 300;
+        font-size: 15px;
+        text-transform: uppercase;
+      }
+      .view {
+        background-color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        width: 150px;
+        text-transform: uppercase;
+        border-radius: 0;
+        padding: 10px;
+        &:hover {
+          background-color: #8990ff;
+          border-color: #fff;
+          color: #fff;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .robotics {
+      .robotics-left {
+        row-gap: 15px;
+        h1 {
+          font-size: 36px;
+          line-height: 45px;
+        }
+      }
+      .robotics-right {
+        img {
+          width: 300px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .robotics {
+      flex-direction: column;
+      .robotics-right {
+        img {
+          width: 500px;
+        }
+      }
+    }
+  }
+}

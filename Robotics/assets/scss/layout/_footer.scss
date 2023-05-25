@@ -1,0 +1,37 @@
+#footer {
+  margin-top: 70px;
+  background-image: url(/assets/img/footer-bg.jpg);
+  padding-top: 90px;
+  padding-bottom: 70px;
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    p {
+      opacity: 0.7;
+      color: white;
+      font-weight: 200;
+      .fa-heart {
+        color: #858dff;
+      }
+      span {
+        color: #858dff;
+      }
+    }
+    .icon {
+      display: flex;
+      gap: 10px;
+      color: #fff;
+      i {
+        background-color: #191a20;
+        padding: 10px 12px;
+        font-size: 12px;
+        &:hover {
+          background-image: linear-gradient(
+            rgb(129, 141, 248),
+            rgb(211, 159, 248)
+          );
+        }
+      }
+    }
+  }
+}

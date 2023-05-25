@@ -1,0 +1,43 @@
+header {
+  //   background-color: rgba(137, 144, 255, 0.3);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 20px;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    nav {
+      .fa-bars {
+        color: #fff;
+        display: none;
+        font-size: 20px;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        li {
+          a {
+            color: #fff;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .header {
+      nav {
+        .fa-bars {
+          display: block;
+        }
+        ul {
+          display: none;
+        }
+      }
+    }
+  }
+}
