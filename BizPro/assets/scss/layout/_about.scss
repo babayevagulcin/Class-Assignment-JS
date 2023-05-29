@@ -25,13 +25,19 @@
         line-height: 20px;
       }
     }
+    .sort-filter{
+      font-size: 24px;
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 30px;
+    }
     .boxes {
       .box {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        row-gap: 20px;
+        row-gap: 30px;
         .img-border {
           border: 2px solid #c2565f;
           border-radius: 50%;

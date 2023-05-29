@@ -13,10 +13,52 @@
       "photo": "./assets/img/photo-camera-interface-symbol-for-button.png"
     },
     {
-      "id": "3",
-      "caption": "Online Marketing",
+      "photo": "./assets/img/diagram.png",
+      "caption": "DIGITAL MEDIA-3",
       "description": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
-      "photo": "./assets/img/diagram.png"
+      "id": "6DX4LWM"
+    },
+    {
+      "photo": "./assets/img/help-lifeguard-symbol.png",
+      "caption": "DIGITAL MEDIA-1",
+      "description": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+      "id": "Wtt36Zb"
+    },
+    {
+      "photo": "./assets/img/editing.png",
+      "caption": "DIGITAL MEDIA-2",
+      "description": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+      "id": "d2TQB7T"
+    },
+    {
+      "photo": "./assets/img/diagram.png",
+      "caption": "DIGITAL MEDIA-77",
+      "description": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+      "id": "lIAIAnP"
+    },
+    {
+      "photo": "./assets/img/photo-camera-interface-symbol-for-button.png",
+      "caption": "DIGITAL MEDIA",
+      "description": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+      "id": "ciLfxiC"
+    },
+    {
+      "id": 1685349373845,
+      "photo": "./assets/img/photo-camera-interface-symbol-for-button.png",
+      "caption": "DIGITAL MEDIA-3",
+      "description": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+    },
+    {
+      "id": 1685349589089,
+      "photo": "./assets/img/help-lifeguard-symbol.png",
+      "caption": "DIGITAL MEDIA-9",
+      "description": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+    },
+    {
+      "id": 1685349646718,
+      "photo": "./assets/img/photo-camera-interface-symbol-for-button.png",
+      "caption": "DIGITAL MEDIA",
+      "description": "Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
     }
   ],
   "fav": []

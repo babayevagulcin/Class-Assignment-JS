@@ -1,24 +1,23 @@
-const API_URL = "http://localhost:8080/users";
-let cards = document.querySelector(".fav-boxes");
+const cards = document.querySelector('.boxes')
 
+let favUsers = JSON.parse(localStorage.getItem('fav-users'))
 
-function cardBody(data) {
-  cards.innerHTML = "";
-  data.forEach((element) => {
+function getLocalFavUser() {
+  cards.innerHTML = ''
+  favUsers.forEach((user) => {
     cards.innerHTML += `
-    <div class="col-sm-12 col-md-6 col-lg-3 fav-box">
-              <div class="img-border">
-                <img src="${element.photo}" alt="" />
-              </div>
-              <h4>${element.caption}</h4>
-              <p>
-              ${element.description}
-              </p>
-              <a href="#" class="btn btn-outline-danger text-secondary"
-                >More Details</a
-              >
-            </div>
-            `;
-  });
+        <div class="card" style="width:14rem;">
+        <img class="card-img-top" src=${user.photo} alt="Card image cap">
+        <div class="card-body">
+          <h5 style='color:brown' class="card-title">${user.name} ${user.surname}</h5>
+          <hr>
+          <p class="card-text">${user.email}</p>
+          <p class="card-text">${user.date}</p>
+          <a href="#" onclick=removeLocal('${user.id}') class="btn btn-primary">Remove fav</a>
+        </div>
+        </div>
+  `
+  })
 }
 
+getLocalFavUser()
